@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    margin: 5px 0;
+}
+@media (min-width: 460px){
+    div{
+        background-color: blue;
+        width: 80%;
+    }
+
+}
+/* Daqui para cima celular */
+
+/* 768px - Celular Grande, Tablet */
+@media(min-width: 768px){
+    div{
+    background-color: green;
+    width: 50%;
+    }
+}
+/* 768px e 1280 - Tablet Grande, computador */
+@media(min-width: 1280px){
+    div{
+        background-color: black;
+        width: 20%;
+        }
+}
