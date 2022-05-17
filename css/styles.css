@@ -3,13 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    height: 100vh;
+    display:flex;
+    /* Alinha verticalmente ao centro */
+    /*align-items:center;*/
+    /* Alinha verticalmente ao topo */
+    /*align-items: flex-start;*/
+    /* Alinha verticalmente ao rodapé */
+    /* align-items: flex-end; */
+    /* Estica os itens para seu container */
+    align-items: stretch;
+}
 div{
     width: 100%;
     height: 100px;
     background-color: red;
-    margin: 5px 0;
+    margin: 5px;
 }
-@media (min-width: 460px){
+.azul{
+    background-color: blue;
+    height: 500px;
+}
+
+/* @media (min-width: 460px){
     div{
         background-color: blue;
         width: 80%;
@@ -19,16 +36,17 @@ div{
 /* Daqui para cima celular */
 
 /* 768px - Celular Grande, Tablet */
-@media(min-width: 768px){
+/* @media(min-width: 768px){
     div{
     background-color: green;
     width: 50%;
     }
-}
+} */
 /* 768px e 1280 - Tablet Grande, computador */
+/*
 @media(min-width: 1280px){
     div{
         background-color: black;
         width: 20%;
         }
-}
+} */
