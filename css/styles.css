@@ -1,3 +1,4 @@
+/* Aula 17-05-2022 */
 *{
     margin: 0;
     padding: 0;
@@ -13,17 +14,49 @@ main{
     /* Alinha verticalmente ao rodapé */
     /* align-items: flex-end; */
     /* Estica os itens para seu container */
-    align-items: stretch;
+    /*align-items: stretch;*/
+
+    /* Alinha horizontalmente ao centro */
+    /*justify-content: center;*/
+
+    /* Alinha horizontalmente ao início */
+    /* justify-content: flex-start; */
+
+    /* Distribui Horizontalmente deixando espaço entre eles */
+    /*justify-content: space-between;*/
+
+    /* Distribui Horizontalmente deixando espaço ao redor */
+    /*justify-content: space-around;*/
+
+    /* Distribui Horizontalmente deixando espaço ao redor dos itens de forma igual */
+    justify-content: space-evenly;
+
+    flex-direction: column; /* Muda a direção do eixo do Flex*/
+    flex-direction: row-reverse; /* Muda a direção da linha Flex (final para início)*/
+
+    /* WRAP - Quebrar em linhas ou Não */
+    /* flex-wrap: nowrap; Distorce os itens e não joga de uma linha para outra */
+    flex-wrap: wrap; /*Não Distorce os itens e distribui os itens em várias linhas */
+
 }
 div{
     width: 100%;
     height: 100px;
     background-color: red;
     margin: 5px;
+    order: 0;
 }
 .azul{
     background-color: blue;
     height: 500px;
+    order: 2;
+}
+
+.amarelo{
+    background-color: yellow;
+    order: 1;
+    flex-grow: 1; /* estica o item até preencher a linha, somente do amarelo. 1 = 100% / 0.5 = 50% */
+    align-self: flex-end;
 }
 
 /* @media (min-width: 460px){
